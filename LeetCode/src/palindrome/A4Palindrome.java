@@ -9,7 +9,7 @@ public class A4Palindrome {
 		System.out.println("Enter an Integer");
 		int a=sc.nextInt();
 		System.out.println(isPalindrome(a));
-         System.out.println(new StringBuilder(String.valueOf(a)).toString());
+        
 
 	}
        static boolean isPalindrome(int n ){
