@@ -6,7 +6,7 @@ public class Node {
  
     @Override
     public String toString() {	
-    	return "[Node] data="+data+" node ="+next;
+    	return "[N]data ="+data+" next "+next;
     }
 }
 
