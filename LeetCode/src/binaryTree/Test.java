@@ -8,7 +8,12 @@ public class Test {
 			
 		   BinaryImplementation a= new BinaryImplementation();
 		   Node root= a.createNode();
-		   a.printNode(root);
+		   System.out.println("Inorder");
+		   a.Inorder(root);
+		   System.out.println("preOrder");
+		   a.preOrder(root);
+		   System.out.println("postOrder");
+		   a.postOrder(root);
 
 				}
 		}
