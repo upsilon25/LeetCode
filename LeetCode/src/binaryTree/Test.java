@@ -5,16 +5,17 @@ import java.util.Scanner;
 public class Test {
 	 static Scanner sc= new Scanner(System.in);
 		public static void main(String[] args) {
-			
+		  
 		   BinaryImplementation a= new BinaryImplementation();
-		   Node root= a.createNode();
+		   TreeNode root= a.createNode();
 		   System.out.println("Inorder");
-		   a.Inorder(root);
+		   System.out.println(a.Inorder(root));
 		   System.out.println("preOrder");
-		   a.preOrder(root);
+		   System.out.println(a.preOrder(root));
 		   System.out.println("postOrder");
-		   a.postOrder(root);
-
+		   System.out.println(a.postOrder(root));
+	       System.out.println( a.size(root));
+           System.out.println(a.maxDepth(root));
 				}
 		}
 
