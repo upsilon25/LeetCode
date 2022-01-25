@@ -67,5 +67,18 @@ public class BinaryImplementation {
     		  return 0;
     	  return 1+Math.max(maxDepth(root.right), maxDepth(root.left));
       }
-
+     public static boolean match(TreeNode a,TreeNode b) {
+         if(a==null && b== null) {
+        	 return true;
+         }
+         else {
+        	 if(a==null ||b== null) {
+        		 return false;
+        	 }
+        	 if(a.data==b.data && match(a.left,b.left) && match(a.right,b.right))
+        		   return true;   
+         }
+		return false;
+    	    	 
+     }
 }

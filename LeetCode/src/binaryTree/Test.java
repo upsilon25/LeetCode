@@ -7,15 +7,21 @@ public class Test {
 		public static void main(String[] args) {
 		  
 		   BinaryImplementation a= new BinaryImplementation();
-		   TreeNode root= a.createNode();
+		   BinaryImplementation b= new BinaryImplementation();
+
+		   TreeNode root1= a.createNode();
 		   System.out.println("Inorder");
-		   System.out.println(a.Inorder(root));
+		   System.out.println(a.Inorder(root1));
 		   System.out.println("preOrder");
-		   System.out.println(a.preOrder(root));
+		   System.out.println(a.preOrder(root1));
 		   System.out.println("postOrder");
-		   System.out.println(a.postOrder(root));
-	       System.out.println( a.size(root));
-           System.out.println(a.maxDepth(root));
-				}
+		   System.out.println(a.postOrder(root1));
+	       System.out.println( a.size(root1));
+           System.out.println(a.maxDepth(root1));
+           TreeNode root2= b.createNode();
+           System.out.println("Inorder");
+		   System.out.println(a.Inorder(root2));
+		   System.out.println(a.match(root1, root2));
+		}
 		}
 
